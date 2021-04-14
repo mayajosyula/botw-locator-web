@@ -1,0 +1,13 @@
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="{{url_for('static', filename='webtest.js')}}"></script>
+</head>
+<body>
+<div>
+<form action="/upload" method="POST" enctype="multipart/form-data">
+<input type="file" name="file"/>
+<input type="submit" value="Classify"/>
+</form>
+</div>
+<img id="myImg" src="#" alt="Image will be displayed here" width="400" />
+</body>
